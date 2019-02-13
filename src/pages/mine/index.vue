@@ -26,13 +26,16 @@
        </div>
        <div class="mine-panel">
            <div class="panel-item">
-
+               我的作品
            </div>
            <div class="panel-item">
-
+               投诉建议
            </div>
            <div class="panel-item">
-
+             ……
+           </div>
+           <div class="panel-item">
+             ……
            </div>
        </div>
     </div>
@@ -95,7 +98,10 @@ export default {
 
 <style scoped>
 .mine{
-    background-color: #fafafa;
+    background-color: #eeeeee;
+    position: absolute;
+    height: 100%;
+    width: 100%
 }
 .mine-top{
     background-image: url("https://image.weilanwl.com/color2.0/index.jpg");
@@ -195,14 +201,16 @@ export default {
     margin: 0 auto;
     top: 50rpx;
     border-radius: 30rpx;
-    background-color: white
+    background-color: white;
+    
 }
 .panel-item{
     position: relative;
     height: 80rpx;
     width: 95%;
     margin: 0 auto;
-    background-color: burlywood;
-    border-bottom: 1rpx solid gray;
+    border-bottom: 1rpx solid rgba(175, 175, 175, 0.3);
+    line-height: 80rpx;
+    font-size: 30rpx;
 }
 </style>
