@@ -1,11 +1,30 @@
 {
   "pages": [
-    "pages/index/main",
-    "pages/logs/main"  ],
+    "pages/mine/main",
+    "pages/index/main"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "图享",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/index/main",
+        "text": "推荐",
+        "selectedIconPath": "./static/images/tabBar/recommondSelected.png",
+        "iconPath": "./static/images/tabBar/recommond.png"
+      },
+      {
+        "pagePath": "pages/mine/main",
+        "text": "我的",
+        "selectedIconPath": "./static/images/tabBar/mineSelected.png",
+        "iconPath": "./static/images/tabBar/mine.png"
+      }
+    ],
+    "selectedColor": "#13AA05",
+    "borderStyle":"white",
+    "backgroundColor":"#eeeeee"
   }
 }
