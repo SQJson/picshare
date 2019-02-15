@@ -1,5 +1,8 @@
 <template>
   <div class="recommond">
+    <div class="picboxes">
+      <picbox></picbox>
+    </div>
     <div class="add-pic">
       <image src="../../static/images/index/add.png"></image>
     </div>
@@ -7,7 +10,7 @@
 </template>
 
 <script>
-
+import picbox from '@/components/picbox';
 export default {
   data () {
     return {
@@ -15,7 +18,7 @@ export default {
     }
   },
   components: {
-    
+    picbox
   },
   methods: {
     
@@ -40,14 +43,18 @@ export default {
   border-radius: 60%;
   margin: 0 auto;
   background-color: #13AA05;
-  bottom: 40rpx;
+  bottom: 40rpx; 
   left: 50%;
   margin-left: -50rpx;
-  box-shadow: 0 0 20rpx  rgb(175, 175, 175);
+  box-shadow: 0 0 30rpx  rgb(175, 175, 175);
+
 }
 .add-pic image{
   position: relative;
   height: 100%;
   width: 100%;
+}
+.picboxes{
+
 }
 </style>
